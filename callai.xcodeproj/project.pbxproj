@@ -397,6 +397,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "CallAI needs access to your microphone to record high-quality meeting audio.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "CallAI needs access to your calendar to automatically detect and record your meetings.";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "CallAI needs full access to your calendar to view and manage your meetings for recording.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "CallAI uses speech recognition to provide accurate meeting transcriptions.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -436,6 +440,10 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "CallAI needs access to your microphone to record high-quality meeting audio.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "CallAI needs access to your calendar to automatically detect and record your meetings.";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "CallAI needs full access to your calendar to view and manage your meetings for recording.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "CallAI uses speech recognition to provide accurate meeting transcriptions.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

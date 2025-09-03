@@ -3,7 +3,6 @@ import SwiftUI
 struct ContentView: View {
     @State private var selectedTab = 0
     @State private var showingSettings = false
-    @State private var showingDebugView = false
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -37,21 +36,7 @@ struct ContentView: View {
         }
         .onAppear {
             checkAPIKeyConfiguration()
-            // Initialize permission debug service
-            _ = PermissionDebugService.shared
         }
-        #if DEBUG
-        .toolbar {
-            ToolbarItem(placement: .automatic) {
-                Button("Debug Permissions") {
-                    showingDebugView = true
-                }
-            }
-        }
-        .sheet(isPresented: $showingDebugView) {
-            PermissionDebugView()
-        }
-        #endif
     }
     
     private func checkAPIKeyConfiguration() {
